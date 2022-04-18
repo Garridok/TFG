@@ -1,0 +1,76 @@
+/* Letters Colors */
+.color1 {color: #ffe117;}
+.color2 {color: #fffc50;}
+.color3 {color: #311906;}
+.color4 {color: #8c8377;}
+.color5 {color: #fffaf2;}
+.color5 a {color: #fffaf2; transition: 1s;}
+
+.color6 {color: #4a0000;}
+.color7 {color: #692600;}
+.color8 {color: #00b3ff;}
+.color9 {color: #00e8ff;}
+.color10 {color: #99ffff;}
+
+/* Background Colors */
+.bgcolor1 {background-color: #ffe117;}
+.bgcolor2 {background-color: #fffc50;}
+.bgcolor3 {background-color: #311906;}
+.bgcolor4 {background-color: #8c8377;}
+.bgcolor5 {background-color: #fffaf2; transition: 1s;}
+.bgcolor6 {background-color: #4a0000;}
+.bgcolor7 {background-color: #692600;}
+
+
+.bgcolor8 {background-color: #00b3ff;
+    transition:1s;}
+
+.bgcolor9 {background-color: #00e8ff;}
+.bgcolor10 {background-color:#99ffff;}
+.bgcolor11{background-color: #f0b090; transition: 1s;}
+.bgcolor12{background-color: #dec0f1;}
+.bgcolor13{background-color: #b79ced;}
+.bgcolor14{background-color: #957fef;}
+.bgcolor15{background-color: #7161ef;}
+
+.bgcolor16{background-color: #f76c57;}
+.bgcolor17{background-color: #fcb54c;}
+.bgcolor18{background-color: #ffe046;}
+/* :hover buttons */
+.color5 a:hover{
+    transition: 1s;
+    color: #ffe046;
+    text-shadow: 1px 10px 10px #2467e2;
+}
+.color5 a:hover:last-child {
+    color: #fffaf2;
+    text-shadow: none;
+}
+.bgcolor8:hover {
+    transition: 1s;
+    background-color: #0051ff;
+}
+
+.bgcolor11:hover {
+    background-color: #f59a6c;
+}
+/* BackGround Gradiant */
+.bgcg{
+
+    background: rgb(239,217,206);
+    background: linear-gradient(0deg, rgba(239,217,206,1) 0%, rgba(222,192,241,1) 22%, rgba(183,156,237,1) 38%, rgba(149,127,239,1) 56%, rgba(113,97,239,1) 75%, rgba(53,36,186,1) 100%);
+}
+
+
+/* 2 opcion de colores */
+.color11 {color: #efd9ce;}
+.color12 {color: #dec0f1;}
+.color13 {color: #b79ced;}
+.color14 {color: #957fef;}
+.color15 {color: #7161ef;}
+
+/* Colores del favicon */
+
+.color16 {color: #f76c57;} 
+.color17{color: #fcb54c;}
+.color18{color: #ffe046;}
