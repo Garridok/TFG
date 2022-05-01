@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import Nav from './Nav'
 import Usuario from './Usuario'
 
-const Titulo = styled.h1 `
-    margin: 10px;
+const Titulo = styled.h2 `
     font-size: 40px;
     color: #f76c57;
     margin: 30px;
-    
+    margin-bottom: 0;
+    max-height: 20px;
 `
 const Perfil = styled.img `
   max-width: 80px;
@@ -16,6 +16,13 @@ const Perfil = styled.img `
   margin: 40px;
   margin-right:10px;
   cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    background-color: #fcb54c;
+    border-radius: 1.5rem;
+    transition: 1s;
+  }
 `
 const CerrarSesion = styled.img `
   max-width: 60px;
@@ -28,16 +35,18 @@ const Logo = styled.img `
   max-width: 8%;
   z-index: 1;
   margin-top: 20px;
+  max-height: 15%;
 `
+
 const Header = () => {
-  const [nav, setNav] = useState(true)
+  const [nav, setNav] = useState(false)
   const [sesion, setSesion] = useState(false)
   const [cerrarSesion, setCerrarSesion] = useState(false)
 
 
   return (
     <>
-    <div className='flex'>
+    <div className='flex-space body'>
         <Titulo>  
             toParty
         </Titulo>
@@ -47,21 +56,10 @@ const Header = () => {
           alt='Logo toParty'
         />
 
-        <div className='flex'>
+        <div className='flex-space'>
 
-        <Perfil src='../src/img/profile.png' alt="perfil" onClick={setSesion(true)} />
-        <CerrarSesion src='../src/img/signOut.png' alt='cerrar Sesion' onClick={setCerrarSesion(true)} />
-         {sesion ? (<Nav
-                    sesion = {sesion}
-                    setSesion = {setSesion}
-                  />) : null} 
-
-        {/* tenemos que usar grid para situar bien mas de tres cosas en linea 
-            1. useState para iniciar sesion, guardamos la sesion en localStorage
-            
-            
-          */}
-       
+        <Perfil src='../src/img/profile.png' alt="perfil" />
+        <CerrarSesion src='../src/img/signOut.png' alt='cerrar Sesion'  />
         </div>
     </div>
 

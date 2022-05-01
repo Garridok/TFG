@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 body{
 
   background: rgb(239,217,206);
@@ -49,9 +50,14 @@ button {
   font-size: calc(10px + 2vmin);
 }
 
-.flex {
+.flex-space {
   display: flex;
   justify-content: space-between;
+  
+
+}
+.flex {
+  display: flex;
 }
 
 .nav a {
@@ -64,4 +70,90 @@ button {
 
 .nav a:last-child {
   margin-right: 65px;
+}
+
+.body {
+  height: 100%;
+}
+
+.centrar-filtro{
+  text-align: center;
+  font-size: 24px;
+  color: #f76c57;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.filtro {
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 1.5rem;
+}
+
+.filtro-opciones{
+  display: block;
+  background-color: #fff;
+  border-radius: 2rem;
+  margin-top: 8px;
+  
+}
+
+.filtro-opciones label {
+  margin: 15px;
+  font-size: 18px;
+}
+
+.block {
+  display: block;
+}
+
+.optionOrden {
+  background-color:#dec0f1 ;
+  color:#333;
+}
+
+
+.barraOrden {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.eventoNew {
+
+  max-height: 120px;
+}
+
+.even {
+  margin-left: 40px;
+  padding-top: 0px;
+}
+
+.division {
+  display: flex;
+  grid-column: 1;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+}
+
+.botonera {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.optionOrden2 {
+  margin-right: 800px;
+}
+.m-0 {
+  margin: 25px 45px ;
 }

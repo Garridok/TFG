@@ -1,12 +1,26 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
-import favi from './img/favi.png'
+import Main from './components/Main'
+import Footer from './components/Footer'
+
+
+
 
 function App() {
 
+  
   return (
-    <Header />
+    <div className='body'>
+      <Header />
+      
+      <Main />
+      <Footer />
+        
+      </div>
+
+     
+
   )
 }
 
